@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans"
+}
+
+body {
+  background: purple;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 930px;
+  position: relative;
+  background-color: white;
+  border-radius: 20px;
+  margin: 25px;
+}
+
+.image-container {
+  position: relative;
+  padding: 50px 0;
+}
+
+.sec-img {
+  position: absolute;
+  top: -300px;
+  left: -580px;
+  z-index: -1;
+}
+
+.outer {
+  position: absolute;
+  top: 190px;
+  left: -90px;
+}
+
+.inner {
+  overflow: hidden;
+}
+
+.inner picture {
+  margin-left: -80px;
+}
+
+.faq-container {
+  position: relative;
+  padding: 50px;
+  padding-bottom: 20px;
+}
+
+.faq-container h2 {
+  color: black;
+  font-size: 28px;
+  padding-bottom: 20px;
+}
+
+/* line */
+.faq-container > div {
+  border-bottom:1px solid lightgrey;
+}
+
+.faq-container span {
+  float: right;
+  transition: 0.4s;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 15px 15px 15px 0;
+  color: gray;
+  transition: 0.4s;
+}
+
+label:hover {
+  color: orange;
+}
+
+input {
+  display: none;
+}
+
+.content {
+  padding: 5px 0;
+  color: gray;
+  font-size: 14px;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+input:checked ~ .content {
+  height: 64px;
+  opacity: 1;
+}
+
+input:checked ~ label {
+  color: black;
+  font-weight: 700;
+}
+
+input:checked ~label span {
+  transform: rotate(180deg);
+  transition: 0.4s;
+}
+
+@media (max-width: 890px) {
+  .container {
+    max-width: 450px;
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 120px;
+  }
+
+  .image-container {
+    padding: 0;
+    margin: 0 auto;
+    margin-top: -110px;
+  }
+  .inner {
+    overflow: visible;
+  }
+  .outer {
+    display: none;
+  }
+  .sec-img {
+    top: 100px;
+    left: -50px;
+  }
+  .faq-container h2 {
+    text-align: center;
+  }
+}
+
+footer {
+  margin-top: 20px;
+  float: right;
+}

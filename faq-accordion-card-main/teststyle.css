@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* 
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+  min-width: 320px;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Kumbh Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+footer {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+footer small {
+  color: thistle;
+  display: block;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+footer a {
+  color: hsl(273, 88%, 29%);
+  text-decoration: none;
+}
+
+/* top image in mobiles */
+.top-image {
+  width: 266px;
+  height: 196px;
+  background-image: url("../front_mentor_faqaccordioncard/faq-accordion-card-main/images/illustration-woman-online-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center, bottom center;
+  position: absolute;
+}
+
+/* main container */
+.container {
+  margin: calc(50px + (196px / 2)) auto 0 auto;
+  width: 95%;
+  background-color: white;
+  border-radius: 2rem;
+  padding-top: 8rem;
+  box-shadow: 0 10px 15px -5px hsl(237, 12%, 33%);
+}
+
+/* content */
+.content {
+  margin: auto;
+  padding: 2rem;
+}
+
+.content__title {
+  color: hsl(238, 29%, 16%);
+  font-weight: 700;
+  text-align: center;
+}
+
+/* description list */
+.list {
+  font-weight: 400;
+}
+
+.list__word {
+  margin: 1rem 0;
+  padding: 1rem 0;
+  border-bottom: solid thin hsl(240, 5%, 91%);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: nowrap;
+  color: hsl(237, 12%, 33%);
+  font-size: 1.1rem;
+}
+
+.list__word * {
+  pointer-events: none;
+}
+
+.list__word--selected {
+  color: hsl(238, 29%, 16%);
+  font-weight: 700;
+  border: none;
+}
+
+.list__word:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+.list__description {
+  border-bottom: solid thin hsl(240, 5%, 91%);
+  color: hsl(240, 6%, 50%);
+  display: none;
+  padding-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.list__description--selected {
+  display: block;
+}
+
+/* arrow icon */
+.icon {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  min-width: 1rem;
+  min-width: 1rem;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: 1rem;
+}
+
+.flip-vertically {
+  transform: scaleY(-1);
+}
+
+/* desktop and tablet styles */
+@media (min-width: 768px) {
+  /* container */
+  .container {
+    width: 65%;
+    margin: auto;
+    padding: 0;
+    background-image: url("../images/illustration-woman-online-desktop.svg"),
+      url("../images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: calc(-472px / 7) center,
+      calc(-966px / 1.735) calc(-945px / 3);
+    overflow: hidden;
+    max-width: 900px;
+  }
+
+  /* content */
+  .content {
+    max-width: 400px;
+    min-width: 400px;
+    margin: 0 0 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 100%;
+    padding: 6rem 5rem;
+  }
+
+  .content__title {
+    text-align: left;
+    font-size: 2.5rem;
+  }
+
+  /* left side image */
+  .top-image {
+    width: 191px;
+    height: 184px;
+    background-image: url("../images/illustration-box-desktop.svg");
+    background-position: center;
+  }
+}
+ */
+/* test */
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans"
+}
+
+body {
+  background: purple;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 930px;
+  position: relative;
+  background-color: white;
+  border-radius: 20px;
+  margin: 25px;
+}
+
+.image-container {
+  position: relative;
+  padding: 50px 0;
+}
+
+.sec-img {
+  position: absolute;
+  top: -300px;
+  left: -580px;
+  z-index: -1;
+}
+
+.outer {
+  position: absolute;
+  top: 190px;
+  left: -90px;
+}
+
+.inner {
+  overflow: hidden;
+}
+
+.inner picture {
+  margin-left: -80px;
+}
+
+.faq-container {
+  position: relative;
+  padding: 50px;
+  padding-bottom: 20px;
+}
+
+.faq-container h2 {
+  color: black;
+  font-size: 28px;
+  padding-bottom: 20px;
+}
+
+/* line */
+/* .faq-container > div {
+  border-bottom:1px solid lightgrey;
+}
+
+.faq-container span {
+  float: right;
+  transition: 0.4s;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 15px 15px 15px 0;
+  color: gray;
+  transition: 0.4s;
+}
+
+label:hover {
+  color: orange;
+}
+
+input {
+  display: none;
+}
+
+.content {
+  padding: 5px 0;
+  color: gray;
+  font-size: 14px;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+input:checked ~ .content {
+  height: 64px;
+  opacity: 1;
+}
+
+input:checked ~ label {
+  color: black;
+  font-weight: 700;
+}
+
+input:checked ~label span {
+  transform: rotate(180deg);
+  transition: 0.4s;
+}
+
+@media (max-width: 890px) {
+  .container {
+    max-width: 450px;
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 120px;
+  }
+
+  .image-container {
+    padding: 0;
+    margin: 0 auto;
+    margin-top: -110px;
+  }
+  .inner {
+    overflow: visible;
+  }
+  .outer {
+    display: none;
+  }
+  .sec-img {
+    top: 100px;
+    left: -50px;
+  }
+  .faq-container h2 {
+    text-align: center;
+  }
+}
+
+footer {
+  margin-top: 20px;
+  float: right;
+}*/
